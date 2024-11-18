@@ -33,6 +33,7 @@ public class App {
                         }else{
                             System.out.println("삭제 실패\n");
                         }
+                        //case 추가
                         break;
                 }
             }
