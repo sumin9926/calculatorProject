@@ -22,6 +22,18 @@ class DataHandler {
        }
     }
 
-    /*연산자를 입력받는 메서드*/
-
+    /*사용자로부터 연산자를 입력받는 메서드*/
+    String requestOperator() throws IOException{
+        while(true) {
+            try {
+                String operator = br.readLine();
+                MathOperator mathOperator=MathOperator.valueOf(operator);
+                return mathOperator.getOperator();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } catch (IllegalArgumentException I) {
+                System.out.println("죄송합니다. 지원하지 않는 연산자입니다.");
+            }
+        }
+    }
 }
