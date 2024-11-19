@@ -4,12 +4,12 @@ public class Numbers<T extends Number> {
     private T number;
 
     /*Setter*/
-    public void setNumber1(T number){
+    public void setNumber(T number){
         this.number=number;
     }
 
     /*Getter*/
-    public T getNumber1(){
+    public T getNumber(){
         return number;
     }
 }
