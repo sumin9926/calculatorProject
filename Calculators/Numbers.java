@@ -4,8 +4,8 @@ public class Numbers<T extends Number> {
     private T number;
 
     /*Setter*/
-    public void setNumber1(T number1){
-        this.number=number1;
+    public void setNumber1(T number){
+        this.number=number;
     }
 
     /*Getter*/
