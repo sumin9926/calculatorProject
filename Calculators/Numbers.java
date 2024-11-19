@@ -5,11 +5,11 @@ public class Numbers<T extends Number> {
 
     /*Setter*/
     public void setNumber1(T number1){
-        this.number1=number1;
+        this.number=number1;
     }
 
     /*Getter*/
     public T getNumber1(){
-        return number1;
+        return number;
     }
 }
