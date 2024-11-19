@@ -1,6 +1,6 @@
 package Calculators;
 
-public class Numbers<T extends Number> {
+public class GenericNumber<T extends Number> {
     private T number;
 
     /*Setter*/
