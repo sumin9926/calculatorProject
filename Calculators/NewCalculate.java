@@ -7,7 +7,7 @@ public class NewCalculate {
     private Double num1,num2,result; //피연산자
     private String operator; //연산자
 
-    void newCalculate() throws IOException {
+    Double newCalculate() throws IOException {
         System.out.println("----------------------------------");
         System.out.println("새 연산을 시작합니다.\n");
 
@@ -37,13 +37,14 @@ public class NewCalculate {
                 break;
             case "/":
                 if (num2 == 0) {
-                    System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
+                    System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.\n");
                 } else {
                     result = num1 / num2;
                     System.out.println(num1 + "/" + num2 + "=" + result+"\n");
                 }
                 break;
         }
+        return result;
     }
 
 }

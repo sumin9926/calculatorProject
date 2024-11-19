@@ -27,6 +27,20 @@ class DataHandler {
         while(true) {
             try {
                 String operator = br.readLine();
+                switch(operator){
+                    case "+":
+                        operator="PLUS";
+                        break;
+                    case "-":
+                        operator="MINUS";
+                        break;
+                    case "*":
+                        operator="MULTIPLE";
+                        break;
+                    case "/":
+                        operator="DIVISION";
+                        break;
+                }
                 MathOperator mathOperator=MathOperator.valueOf(operator);
                 return mathOperator.getOperator();
             } catch (IOException e) {

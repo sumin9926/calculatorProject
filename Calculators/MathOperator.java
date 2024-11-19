@@ -1,6 +1,7 @@
 package Calculators;
 
 public enum MathOperator {
+
     PLUS("+"), MINUS("-"), MULTIPLE("*"), DIVISION("/");
 
     private final String operator;
@@ -12,4 +13,5 @@ public enum MathOperator {
     public String getOperator(){
         return operator;
     }
+
 }
